@@ -16,7 +16,7 @@ This project is a well-designed, user-friendly landing page for a browser extens
 
 - **HTML5**: For the structure of the website.
 - **CSS3**: For styling, including Flexbox and media queries for responsiveness.
-- **JavaScript**: For interactive elements and animations.
+- **CSS3 Animations**: For interactive elements and animations.
 - **Google Fonts**: 'Rubik' font for a modern look and feel.
 
 
