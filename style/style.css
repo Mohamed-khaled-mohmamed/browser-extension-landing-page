@@ -62,6 +62,17 @@ a {
 }
 
 /* End CSS Reset */
+.lazy-animation {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.lazy-animation.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .video-page {
   position: fixed;
   top: 0;
@@ -333,24 +344,6 @@ a {
 }
 .footer__left {
   margin-right: auto;
-}
-
-/* Animation */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-.section,
-.cards,
-.faq__row,
-.footer {
-  animation: fadeInUp 0.5s ease forwards;
 }
 
 @media (max-width: 900px) {
