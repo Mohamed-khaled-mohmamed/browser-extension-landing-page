@@ -46,6 +46,7 @@ html {
   font-size: 62.5%;
   scroll-behavior: smooth;
   scroll-padding-top: 4rem;
+  overflow-x: hidden;
 }
 
 body {
@@ -98,6 +99,7 @@ a {
   width: 100%;
   position: sticky;
   top: 0;
+  left: 0;
   // margin-top: var(--default-padding);
   z-index: 99999;
 
@@ -383,14 +385,8 @@ a {
     padding: 0 1rem;
     justify-content: center;
     align-items: center;
-    overflow-x: hidden;
   }
 
-  .header {
-    width: 100%;
-    position: sticky;
-    top: 0;
-  }
   .section {
     flex-direction: column;
     justify-content: center;
@@ -446,6 +442,7 @@ a {
     font-size: 6px;
     // overflow: hidden;
   }
+
   .cards {
     flex-direction: column;
     align-items: center;

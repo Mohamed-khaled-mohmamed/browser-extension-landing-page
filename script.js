@@ -1,4 +1,5 @@
 // lazy animation
+
 const sections = document.querySelectorAll('.section');
 
 const observeCallback = function (entries) {
@@ -12,10 +13,21 @@ const observeCallback = function (entries) {
   });
 };
 
-const option = { rootMargin: '22%', threshold: 1 };
+const option = {  threshold: 0.3 };
 
 const observer = new IntersectionObserver(observeCallback , option);
 
-sections.forEach((section) => {
+
+
+window.document.addEventListener("DOMContentLoaded" , ()=>{
+  sections.forEach((section) => {
+    section.classList.add("show")
+  });
+})
+
+window.document.addEventListener("scroll" , ()=>{
+  sections.forEach((section) => {
   observer.observe(section);
 });
+})
+

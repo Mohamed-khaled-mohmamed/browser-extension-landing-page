@@ -46,6 +46,7 @@ html {
   font-size: 62.5%;
   scroll-behavior: smooth;
   scroll-padding-top: 4rem;
+  overflow-x: hidden;
 }
 
 body {
@@ -97,6 +98,7 @@ a {
   width: 100%;
   position: sticky;
   top: 0;
+  left: 0;
   z-index: 99999;
 }
 .header__navigation {
@@ -355,12 +357,6 @@ a {
     padding: 0 1rem;
     justify-content: center;
     align-items: center;
-    overflow-x: hidden;
-  }
-  .header {
-    width: 100%;
-    position: sticky;
-    top: 0;
   }
   .section {
     flex-direction: column;
